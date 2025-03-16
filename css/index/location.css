@@ -1,0 +1,425 @@
+.topbar {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px var(--black);
+    background: var(--white);
+}
+
+.logo_pages {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_part {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 50px;
+    width: 20%;
+    height: 100%;
+    text-decoration: none;
+    cursor: default;
+}
+
+.logo_part .text {
+    color: var(--dark-grey);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.logo_part .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    color: var(--black);
+    background: linear-gradient(225deg, hsl(37, 97%, 70%) 0%, hsl(5, 77%, 71%) 100%);
+    margin-right: 10px;
+}
+
+.pages {
+    width: 80%;
+    height: 100%;
+    padding: 0 50px;
+}
+
+.pages ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.pages ul li {
+    list-style: none;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pages ul li a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--dark-grey);
+    padding: 27px 15px;
+    text-align: center;
+    transition: 0.3s ease;  
+}
+
+.pages ul li a:hover {
+    background: var(--light-grayish-peach);
+}
+
+.locations {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 110px auto 300px auto;
+}
+
+.locations .location {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.locations .location.canada {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.locations .location.australia {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+}
+
+.locations .location.united-kingdom {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.locations .location .map {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.locations .location .map img {
+    width: 100%;
+    height: 100%;
+}
+
+.locations .location .comment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background: var(--light-grayish-peach);
+    padding: 30px 80px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.locations .location .comment .title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--peach);
+    margin-bottom: 15px;
+}
+
+.locations .location .comment .places {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.locations .location .comment .places .first {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: var(--black);
+    position: relative;
+}
+
+.locations .location .comment .places .first::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 340%;
+    top: -190%;
+    left: -10%;
+    z-index: 1;
+    background-image: url(../../svg/bg-pattern-hero-home.svg);
+    background-size: 100%;
+    background-position: top;
+    opacity: 0.5;
+    transform: rotate(90deg);
+}
+
+.locations .location .comment .places .first .head {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.locations .location .comment .places .first .middle,
+.locations .location .comment .places .first .end {
+    font-size: 14px;
+}
+
+.locations .location .comment .places .second {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: var(--black);
+    position: relative;
+}
+
+.locations .location .comment .places .second::before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 350%;
+    top: -140%;
+    left: -10%;
+    z-index: 1;
+    background-image: url(../../svg/bg-pattern-hero-home.svg);
+    background-size: 100%;
+    background-position: top;
+    opacity: 0.3;
+    transform: rotate(180deg);
+}
+
+.locations .location .comment .places .second .head {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.locations .location .comment .places .second .middle,
+.locations .location .comment .places .second .end {
+    font-size: 14px;
+}
+
+.talk_project {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -130%;
+    background-image: 
+        url(../../svg/bg-pattern-design-pages-intro-tablet.svg),
+        linear-gradient(
+            to right,
+            rgba(232, 128, 105, 1),
+            rgba(232, 128, 105, 1)
+        );
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 50px 70px;
+}
+
+.talk_text {
+    width: 80%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.talk_text .title {
+    width: 30%;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.talk_text .desc {
+    width: 75%;
+    font-size: 18px;
+}
+
+.talk_btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background: var(--white);
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--black);
+}
+
+.talk_btn:hover {
+    color: var(--peach);
+}
+
+.bottombar {
+    width: 100%;
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 100px 80px 100px;
+}
+
+.bottombar .foot_logopages {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottombar .foot_logopages .foot_logo_part {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.bottombar .foot_logopages .foot_logo_part .foot_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    color: var(--black);
+    background: linear-gradient(225deg, hsl(37, 97%, 70%) 0%, hsl(5, 77%, 71%) 100%);
+    margin-right: 10px;
+}
+
+.bottombar .foot_logopages .foot_logo_part .foot_text {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    pointer-events: none;
+}
+
+.bottombar .foot_logopages .foot_pages {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottombar .foot_logopages .foot_pages ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.bottombar .foot_logopages .foot_pages ul li {
+    width: 30%;
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottombar .foot_logopages .foot_pages ul li a {
+    text-decoration: none;
+    color: lightgrey;
+    width: 100%;
+    height: 100%;
+    padding: 27px 0;
+    text-align: right;
+}
+
+.bottombar .foot_logopages .foot_pages ul li a:hover {
+    color: var(--peach);
+}
+
+.bottombar .foot_infos {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.bottombar .foot_infos .infos_text {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightgrey;
+}
+
+.bottombar .foot_infos .infos_text .infos_office {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.bottombar .foot_infos .infos_text .infos_office .infos_office_location,
+.bottombar .foot_infos .infos_text .infos_office .infos_office_town,
+.bottombar .foot_infos .infos_text .infos_contact .infos_contact_number,
+.bottombar .foot_infos .infos_text .infos_contact .infos_contact_mail {
+    font-size: 14px;
+}
+
+.bottombar .foot_infos .infos_text .infos_office .infos_office_title,
+.bottombar .foot_infos .infos_text .infos_contact .infos_contact_title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bottombar .foot_infos .infos_text .infos_contact {
+    width: 50%;
+}
+
+.bottombar .foot_infos .infos_logos {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottombar .foot_infos .infos_logos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    width: 100%;
+    color: var(--white);
+    margin-bottom: 40px;
+}

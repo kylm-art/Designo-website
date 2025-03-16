@@ -1,0 +1,610 @@
+.topbar {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px var(--black);
+    background: var(--white);
+}
+
+.logo_pages {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_part {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 50px;
+    width: 20%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.logo_part .text {
+    color: var(--dark-grey);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.logo_part .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    color: var(--black);
+    background: linear-gradient(225deg, hsl(37, 97%, 70%) 0%, hsl(5, 77%, 71%) 100%);
+    margin-right: 10px;
+}
+
+.pages {
+    width: 80%;
+    height: 100%;
+    padding: 0 50px;
+}
+
+.pages ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.pages ul li {
+    list-style: none;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pages ul li a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--dark-grey);
+    padding: 27px 15px;
+    text-align: center;
+    transition: 0.3s ease;  
+}
+
+.pages ul li a:hover {
+    background: var(--light-grayish-peach);
+}
+
+.pub {
+    position: relative;
+    width: 70%;
+    height: 500px;
+    margin: 100px auto 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--peach);
+    overflow: hidden;
+}
+
+.pub .pub_text {
+    width: 60%;
+    position: absolute;
+    z-index: 2;
+    left: 60px;
+    color: var(--white);
+}
+
+.pub .pub_text .title {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.pub .pub_text .desc {
+    margin-bottom: 35px;
+}
+
+.pub .pub_text button {
+    padding: 15px 15px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    background: var(--white);
+}
+
+.pub .pub_text button:hover {
+    color: var(--peach);
+}
+
+.pub .pub_img {
+    background-image: 
+        url(../../svg/bg-pattern-hero-home.svg),
+        linear-gradient(
+            to right,
+            rgba(232, 128, 105, 1),
+            rgba(232, 128, 105, 1)
+        );
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: start;
+    justify-content: right;
+    overflow: hidden;
+}
+
+.pub .pub_img img {
+    position: absolute;
+    right: -60px;
+    width: 450px;
+}
+
+.designs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto 100px auto;
+}
+
+.designs .design {
+    width: 49%;
+    height: 540px;
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),
+        url(../../images/home/desktop/image-web-design-large.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.designs .design:hover {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url(../../images/home/desktop/image-web-design-large.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--peach);
+}
+
+.designs .design:hover .view .view_svg {
+    color: var(--white);
+}
+
+.designs .design .title {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 6px;
+}
+
+.designs .design .view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 31%;
+}
+
+.designs .design .view .view_svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--peach);
+}
+
+.designs .design .view .view_text {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.designs .group {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.designs .group .group_design {
+    width: 100%;
+    height: 260px;
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.designs .group .group_design:hover {
+    color: var(--peach);
+}
+
+.designs .group .group_design:hover .view .view_svg {
+    color: var(--white);
+}
+
+.designs .group .group_design .view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 31%;
+}
+
+.designs .group .group_design .view .view_svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--peach);
+}
+
+.designs .group .group_design .view .view_text {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.designs .group .group_design .title {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 6px;
+}
+
+.designs .group > .group_design:nth-child(1) {
+    margin-bottom: 20px;
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),
+        url(../../images/home/desktop/image-app-design.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.designs .group > .group_design:nth-child(1):hover {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url(../../images/home/desktop/image-app-design.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.designs .group > .group_design:nth-child(2) {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),
+        url(../../images/home/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.designs .group > .group_design:nth-child(2):hover {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url(../../images/home/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.cards {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 340px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.cards::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 20%;
+    left: 50%;
+    z-index: -1;
+    background-image: url(../../svg/bg-pattern-leaf.svg);
+    background-size: 100%;
+    background-position: right;
+    transform: rotate(180deg);
+}
+
+.cards .card {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .card .svg {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.cards .card .svg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(../../svg/bg-pattern-hero-home.svg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.cards .card.passionate .svg::before {
+    transform: rotate(-45deg);
+}
+
+.cards .card.resourceful .svg::before {
+    transform: rotate(180deg);
+}
+
+.cards .card .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .card .text .title {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.cards .card .text .desc {
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.talk_project {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -235%;
+    background-image: 
+        url(../../svg/bg-pattern-design-pages-intro-tablet.svg),
+        linear-gradient(
+            to right,
+            rgba(232, 128, 105, 1),
+            rgba(232, 128, 105, 1)
+        );
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 50px 70px;
+}
+
+.talk_text {
+    width: 80%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.talk_text .title {
+    width: 30%;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.talk_text .desc {
+    width: 75%;
+    font-size: 18px;
+}
+
+.talk_btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background: var(--white);
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--black);
+}
+
+.talk_btn:hover {
+    color: var(--peach);
+}
+
+.bottombar {
+    width: 100%;
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 100px 80px 100px;
+}
+
+.bottombar .foot_logopages {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottombar .foot_logopages .foot_logo_part {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    pointer-events: none;
+}
+
+.bottombar .foot_logopages .foot_logo_part .foot_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    color: var(--black);
+    background: linear-gradient(225deg, hsl(37, 97%, 70%) 0%, hsl(5, 77%, 71%) 100%);
+    margin-right: 10px;
+}
+
+.bottombar .foot_logopages .foot_logo_part .foot_text {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    pointer-events: none;
+}
+
+.bottombar .foot_logopages .foot_pages {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottombar .foot_logopages .foot_pages ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.bottombar .foot_logopages .foot_pages ul li {
+    width: 30%;
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottombar .foot_logopages .foot_pages ul li a {
+    text-decoration: none;
+    color: lightgrey;
+    width: 100%;
+    height: 100%;
+    padding: 27px 0;
+    text-align: right;
+}
+
+.bottombar .foot_logopages .foot_pages ul li a:hover {
+    color: var(--peach);
+}
+
+.bottombar .foot_infos {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.bottombar .foot_infos .infos_text {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightgrey;
+}
+
+.bottombar .foot_infos .infos_text .infos_office {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.bottombar .foot_infos .infos_text .infos_office .infos_office_location,
+.bottombar .foot_infos .infos_text .infos_office .infos_office_town,
+.bottombar .foot_infos .infos_text .infos_contact .infos_contact_number,
+.bottombar .foot_infos .infos_text .infos_contact .infos_contact_mail {
+    font-size: 14px;
+}
+
+.bottombar .foot_infos .infos_text .infos_office .infos_office_title,
+.bottombar .foot_infos .infos_text .infos_contact .infos_contact_title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bottombar .foot_infos .infos_text .infos_contact {
+    width: 50%;
+}
+
+.bottombar .foot_infos .infos_logos {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottombar .foot_infos .infos_logos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    width: 100%;
+    color: var(--white);
+    margin-bottom: 40px;
+}
